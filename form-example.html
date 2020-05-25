@@ -1,0 +1,70 @@
+<!-- A simple example to build a form in HTML5 --> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata goes in the head -->
+    <title>Registration Form</title>
+  </head>
+   <body>
+     <h2>REGISTER</h2>
+     <form>
+       <div>
+       <label for="firstname">First Name:</label>
+       <input id="firstname" type="text" placeholder="Yuvraj" required>
+
+       <label for="lastname">Last Name:</label>
+       <input id="lastname" type="text" placeholder="Manral" required>
+       </div>
+
+       <div>
+       <label for="male">Male</label>
+       <input id="male" type="radio" name="gender" value="male">
+       <label for="female">Female</label>
+       <input id="female" type="radio" name="gender" value="female">
+       <label for="other">Other</label>
+       <input id="other" type="radio" name="gender" value="other">
+       </div>
+
+       <div>
+       <label for="email">EMail:</label>
+       <input id="email" type="email" placeholder="your Email" required>
+       <label for="password">Password:</label>
+       <input id="password" type="password" pattern=".{2,5}" title="Password must be between 5 to 10 characters" required>
+       </div>
+
+       <div>
+         <label>
+           Birthday:
+         <select name="month">
+           <option>Month</option>
+           <option>January</option>
+           <option>February</option>
+           <option>March</option>
+           <option>April</option>
+         </select>
+         <select name="day">
+           <option>Day</option>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+           <option>4</option>
+         </select>
+         <select name="year">
+           <option>Year</option>
+           <option>1999</option>
+           <option>2000</option>
+           <option>2001</option>
+           <option>2002</option>
+         </select>
+         </label>
+       </div>
+
+       <div>
+       <label for="check">I agree to the Terms and conditions.</label>
+       <input id="check" type="checkbox">
+       </div>
+
+       <button>Submit</button>
+     </form>
+  </body>
+</html>
